@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         //URI:
         //Content:// Package_name/ Table_name
-
+        //in this example --> content://com.android.contacts/contacts
        Cursor allContactsCursor= getContentResolver().query( ContactsContract.Contacts.CONTENT_URI , null, null, null, null);
 
        MyPeopleRecyclerAdapter myPeopleRecyclerAdapter= new MyPeopleRecyclerAdapter(this,allContactsCursor );
